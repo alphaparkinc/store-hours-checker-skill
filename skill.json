@@ -1,0 +1,42 @@
+{
+  "name": "store-hours-checker-skill",
+  "version": "1.0.0",
+  "description": "Calculates local operational windows to confirm if ordering is currently open based on target store timezone details.",
+  "author": "alphaparkinc",
+  "category": "operations",
+  "tags": [
+    "operations",
+    "schedule",
+    "storefront",
+    "open-status",
+    "time-windows"
+  ],
+  "inputs": {
+    "current_hour": {
+      "type": "integer",
+      "description": "Current time hour (0 to 23)."
+    },
+    "open_hour": {
+      "type": "integer",
+      "description": "Scheduled store open hour (default 9).",
+      "default": 9
+    },
+    "close_hour": {
+      "type": "integer",
+      "description": "Scheduled store close hour (default 21).",
+      "default": 21
+    }
+  },
+  "outputs": {
+    "is_open": {
+      "type": "boolean",
+      "description": "True if current_hour sits inside the open-close timeline range."
+    },
+    "next_change_hours": {
+      "type": "integer",
+      "description": "Hours until the next store state change."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
