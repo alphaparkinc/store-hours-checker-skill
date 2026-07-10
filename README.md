@@ -1,4 +1,4 @@
-# store-hours-checker-skill
+# genpark-store-hours-checker-skill
 
 > **GenPark AI Agent Skill** -- Shop open/closed schedule validator.
 
