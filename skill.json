@@ -1,5 +1,5 @@
 {
-  "name": "store-hours-checker-skill",
+  "name": "genpark-store-hours-checker-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Calculates local operational windows to confirm if ordering is currently open based on target store timezone details.",
   "author": "genpark",
